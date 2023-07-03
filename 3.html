@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Title: " + document.title);
+        console.log("Location: " + document.location);
+        console.log(document.scripts);
+        console.log("Domain: " + document.domain);
+        console.log("URL: " + document.URL);
+        console.log(document.links);
+        console.log(document.activeElement);
+        console.log(document.anchors);
+        console.log("innerHTML: " + document.innerHTML);
+        console.log("innerText: " + document.innerText);
+
+
+    </script>
+
+
+
+    <p id="firstpara" class="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias enim obcaecati, animi doloremque sapiente
+        explicabo harum, quibusdam a soluta recusandae fugiat, ipsam deserunt! Sequi dicta, ipsa aut amet quam itaque!
+    </p>
+
+    <p id="firstpara" class="para">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quidem praesentium consequuntur quia
+        recusandae, iusto animi vel perferendis optio ipsum aliquam laudantium laborum asperiores mollitia ducimus
+        doloremque! Vitae, facilis quaerat.
+    </p>
+    
+
+    <script>
+        
+
+        var first = document.getElementById("firstpara").innerHTML;
+        var second = document.getElementById("firstpara").innerText;
+        console.log(first);
+        console.log(second);
+
+        var firstclass = document.getElementsByClassName("para");
+        console.log(firstclass[0].innerHTML)
+
+
+        firstclass[0].classList.add("mypara");
+        firstclass[0].innerText = "Success";
+
+        
+        
+    </script>
+    <div class="container">
+
+    </div>
+
+    <script>
+        tagname = document.getElementsByTagName("div");
+
+        createdelement = document.createElement("Shoaib");
+        createdelement.innerText = " SSSJ ";
+        tagname[0].appendChild(createdelement)
+
+        createdelement1 = document.createElement("SHAH");
+        createdelement1.innerText = "Syed Shoaib Shah Jalani";
+        tagname[0].replaceChild(createdelement1, createdelement)
+
+
+       
+ 
+    </script>
+</body>
+</html>

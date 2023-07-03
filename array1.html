@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let studentname = ["mazz", "muneeb", "aslam", "ghufran", 
+        "arslan", "mukasid", "mudasir", "afzal" ]
+
+        document.write("String type Array "+ studentname + "<br>");
+        let name = new Array("khuzaima","huzaifa","sana","misbah","shoaib","yousuf",
+        "afzal","muneeb","kashaf","kinza","abdul rafay")
+
+        let array1 = [];
+        document.write("Empty Array"+ array1+ "<br>");
+
+        let array2 =[161, 16, 151, 15, 141, 14, 131, 13, 121, 12, 111, 11];
+        document.write("int type Array "+ array2 + "<br>");
+
+        let array3 =  [161, 16, "muneeb",151, 15, "aslam",141, 14, "ghufran"] ;
+        document.write("Mixed DataType Array"+ array3 +"<br>");
+
+        document.write("Methode of Array <br>");
+
+        document.write(studentname.length+ "<br>");
+
+        studentname.sort()
+        document.write(studentname+"<br>");
+
+        studentname.push("mazz")
+        document.write(studentname+ "<br>");
+
+        studentname.unshift("azan")
+        document.write(studentname+ "<br>");
+
+        studentname.pop()
+        document.write(studentname+ "<br>");
+
+        studentname.shift()
+        document.write(studentname+"<br>");
+
+        document.write(studentname.indexOf("muneeb"));
+
+        studentname[3]="ghufran";
+        document.write(studentname)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

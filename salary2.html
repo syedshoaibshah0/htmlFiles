@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Salary = parseInt(prompt("Enter Your Salary"));
+
+if (Salary <= 50000 && Salary >= 1) {
+    document.write("<b>Your Salary:</b>" + Salary + "<br>"
+    + "<b>Medical Allowance:</b> 8000 <br>");
+    add(6000, 2000)
+    function add(a, b) {
+    var salarylessthan50k = Salary + a + b;
+    document.write("<b>Net Salary:</b>" + salarylessthan50k + "<br>");
+}
+}else if (Salary >= 50000 && Salary <= 100000) {
+    document.write("<b>Your Salary:</b>" + Salary + "<br>"
+    + "<b>Medical Allowance:</b> 10000 <br>" + "<b>Rent Allowance:</b> 2000 <br>");
+    add1(10000, 2000)
+    function add1(c, d) {
+    var salarygreaterthan50k = Salary + c + d;
+    document.write("<b>Net Salary:</b>" + salarygreaterthan50k + "<br>");               
+    }
+}else if (Salary >= 100000 && Salary <= 150000) {
+    document.write("<b>Your Salary:</b>" + Salary + "<br>"
+    + "<b>Medical Allowance:</b> 12000 <br>" + "<b>Rent Allowance:</b> 2000 <br>"
+    + "<b>Overtime Allowance:</b> 5000 <br>" + "<b>Dearness Allowance:</b> 1500 <br>");
+    add2(12000, 2000, 5000, 1500) 
+        function add2(e, f, g, h) {
+        var salarygreaterthan100k = Salary + e + f + g + h;
+        document.write("<b>Net Salary:</b>" + salarygreaterthan100k + "<br>");
+        }
+    }else if (Salary >= 150000 && Salary <= 199999) {
+        document.write("<b>Your Salary:</b>" + Salary + "<br>"
+        + "<b>Medical Allowance:</b> 13000 <br>" + "<b>Rent Allowance:</b> 3000 <br>"
+        + "<b>Overtime Allowance:</b> 6000 <br>" + "<b>Dearness Allowance:</b> 2300 <br>"
+        + "<b>Special Allowance:</b> 1800 <br>" + "<b>Entertainment Allowance:</b> 3500 <br>");
+        add3(13000, 3000, 6000, 2300, 1800, 3500)
+        function add3(i, j, k, l, m, n) {
+        var salarygreaterthan150k = Salary + i + j + k + l + m + n;
+        document.write("<b>Net Salary:</b>" + salarygreaterthan150k + "<br>");                    
+        }
+    }else if (Salary == 200000) {
+            document.write("<b>Your Salary:</b>" + Salary + "<br>")
+        sub(100000, 50000)
+        function sub(x, y) {
+            salary200k = Salary - x - y;
+            document.write("<b>Net Salary:</b>" + salary200k + "<br>")
+        }
+        }else {
+            document.write("<strong>Please try again.</strong>")
+        }
+    </script>
+</body>
+</html>

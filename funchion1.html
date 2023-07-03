@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    add(900, 1100);
+    add(300, 4700);
+    add(500,5500);
+    function add(x,y) {
+        var z = x + y;
+        document.write("<b>Add:</b>" + z + "<br>");
+    }
+
+    sub(1000, 222);
+    sub(400, 111);
+    sub(5000, 4300);
+    function sub(e,f) {
+        var g = e - f;
+        document.write("<b>Sub:</b>" + g + "<br>");
+    }
+
+    multiply(3, 21);
+    multiply(9, 24);
+    multiply(12, 27);
+    function multiply(q,s) {
+    var t = q * s;
+    document.write("<b>Multiply:</b>" + t + "<br>");
+    }
+
+    power(9, 44);
+    power(55, 60);
+    power(10,9);
+    function power(l,m) {
+        var n = l ** m;
+        document.write("<b>Power:</b>" +n + "<br>");
+    }
+
+    exponential(9, 14);
+    exponential(55, 33);
+    exponential(44, 22);
+    function exponential(p,q) {
+        var r = (p **q);
+        document.write("<b>Exponential:</b>" + r+ "<br>");
+    }
+
+    average(3, 10);
+    average(9, 65);
+    average(8, 55);
+    function average(d,r) {
+        var a = (d + r)/2;
+        document.write("<b>Average:</b>" + a + "<br>")
+    }
+
+    percentage(999, 444);
+    percentage(888, 555);
+    percentage(777, 666);
+    function percentage(l,o) {
+        var m = l % o;
+        document.write("<b>Percentage:</b>" + m + "<br>")
+    }
+</script>
+</body>
+</html>
